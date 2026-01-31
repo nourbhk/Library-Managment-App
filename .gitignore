@@ -29,10 +29,95 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
+# Environment Variables - SENSITIVE DATA
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.test
 .env*.local
+*.env
 
-# typescript
+# API Keys and Secrets
+config/secrets.js
+config/keys.js
+secrets/
+api-keys.json
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+database.json
+
+# Authentication & Security
+auth-config.json
+clerk-keys.json
+firebase-config.json
+google-services.json
+GoogleService-Info.plist
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# TypeScript
 *.tsbuildinfo
+*.buildinfo
 
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Build artifacts
+build/
+dist/
+out/
+
+# Coverage directory used by tools like istanbul
+coverage/
+.nyc_output/
+
+# Jest
+.jest/
+
+# App specific
 app-example
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Personal notes and TODOs
+notes.md
+todo.md
+TODO.md
+personal-notes/
+
+# Local configuration
+local-config.json
+development-config.json
